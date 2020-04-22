@@ -1,5 +1,5 @@
 $(document).foundation();
 
-$('#print-btn').click(function(){
+document.querySelector('#print-btn').click(function(){
     window.print();
-})
+});
