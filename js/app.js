@@ -1,5 +1,7 @@
 $(document).foundation();
 
-document.querySelector('#print-btn').click(function(){
+const printBtn = document.querySelector('#print-btn');
+
+printBtn.addEventListener("click", function(){
     window.print();
 });
