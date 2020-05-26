@@ -1,0 +1,102 @@
+$ffe315: #ffe315;
+$fbb038: #fbb038;
+$f7931e: #f7931e;
+$f15a24: #f15a24;
+$ed1c24: #ed1c24;
+$c1272d: #c1272d;
+
+$fill-transition: 50;
+
+#container {
+    width: 100%;
+    height: 97.5vh;
+    border: 1px solid #000;
+}
+
+svg.world-map {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+
+    #background path {
+        fill: #dadada;
+    }
+
+    .arena {
+        path {
+            fill: #aaa;
+            //stroke: #000; // for debugging purposes
+            //opacity: .5;
+            transition: fill 350ms ease-in-out;
+            &:hover {
+                //fill: #000;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            stroke-width: 0;
+            g {
+                &#{$c1272d} {
+                    path {
+                        fill: #{$c1272d};
+                        transition-delay: #{$fill-transition}ms;
+                    }
+                }
+                &#{$ed1c24} {
+                    path {
+                        fill: #{$ed1c24};
+                        transition-delay: #{$fill-transition + 50}ms;
+                    }
+                }
+                &#{$f15a24} {
+                    path {
+                        fill: #{$f15a24};
+                        transition-delay: #{$fill-transition + 100}ms;
+                    }
+                }
+                &#{$f7931e} {
+                    path {
+                        fill: #{$f7931e};
+                        transition-delay: #{$fill-transition + 150}ms;
+                    }
+                }
+                &#{$fbb038} {
+                    path {
+                        fill: #{$fbb038};
+                        transition-delay: #{$fill-transition + 200}ms;
+                    }
+                }   
+                &#{$ffe315} {
+                    path {
+                        fill: #{$ffe315};
+                        transition-delay: #{$fill-transition + 250}ms;
+                    }
+                }
+            }
+        }
+    }
+
+
+.svg-pan-zoom-control {
+    cursor: pointer;
+    fill: black;
+    fill-opacity: 0.333;
+}
+
+.svg-pan-zoom-control:hover {
+    fill-opacity: 0.8;
+}
+
+.svg-pan-zoom-control-background {
+    fill: #ccc;
+    fill-opacity: 0.5;
+}
+
+.svg-pan-zoom-control-background {
+    fill-opacity: 0.8;
+}
