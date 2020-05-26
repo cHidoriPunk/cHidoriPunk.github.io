@@ -1,0 +1,61 @@
+body { font-family: Calibri;
+    background-color:silver;
+    background-image:
+            radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+            radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+            radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+            radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+            radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size:100px 50px; }
+
+form { margin-bottom: 30px; }
+
+.container { width: 100%; max-width: 1200px; padding: 0 15px; margin: 0 auto; }
+
+#inputMessage { height: 180px; }
+
+main { margin-bottom: 30px; }
+main nav { background: #fff; justify-content: space-around; }
+
+#paragraphs { margin-top: 30px; }
+#paragraphs [class^="col"] { margin-bottom: 30px; }
+#listExample ol { padding-left: 0; list-style-position: inside; }
+#listExample ol  li.list-group-item { display: list-item; }
+
+.tbody-light { background: #fff; }
+
+#back-to-top{ position: fixed;
+    left: 15px;
+    bottom: 15px;
+    color: #fff;
+    font-size: 1.5em;
+    background: #000;
+    padding: 5px 12px; }
+
+
+.thankyou main { min-height: 400px; position: relative; }
+
+.thankyou main section h1 { transition: all 1500ms ease; }
+
+#assignmentDone {
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    background: #629cd8;
+    color: #fff;
+    font-size: 5em;
+    padding: 20px 30px;
+    line-height: 0.9em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}

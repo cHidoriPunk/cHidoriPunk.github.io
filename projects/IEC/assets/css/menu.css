@@ -1,0 +1,5 @@
+body { overflow: hidden; margin: 0; padding: 0; }
+ul { padding: 0; margin: 0; display: flex; flex-flow: row wrap; list-style: none; }
+li { flex: 1 0 25%; justify-content: center; align-items: center; align-content: stretch; height: 50vh; }
+li a { display: flex; justify-content: center; text-align: center; align-items: center; height: 100%; text-decaoration: none; }
+.wrapper:before { content: ''; position: fixed; z-index: -1; background: url('../images/bg.jpg') no-repeat center; background-size: 100%; top: 0; right: 0; bottom: 0; left: 0; }

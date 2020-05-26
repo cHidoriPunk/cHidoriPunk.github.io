@@ -1,0 +1,77 @@
+html,body { -webkit-user-drag: none; }
+body { overflow: hidden; margin: 0; padding: 0; font-family: Roboto, sans-serif; color: #fff; font-size: 16px; }
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+ul { padding: 0 1.5rem; }
+iframe { border: none; }
+
+.wrapper { text-align: center; position: relative; height: 100vh; }
+.wrapper:before { content: ''; position: fixed; z-index: -1; background: url('../images/bg.jpg') no-repeat center; background-size: 100%; top: 0; right: 0; bottom: 0; left: 0; }
+.hide { display: none!important; }
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+.text-center { text-align: center; }
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.inner-wrapper { text-align: left; width: 70%; margin: 0 auto; padding: 3rem 1rem; }
+
+.camera-feed-wrapper { position: absolute; left: 0; top: 0; right: 0; margin: 0 auto; z-index: 10; width: 100%; height: calc(100% - 75px); transition: all 500ms ease-in-out; transform: translateY(-100%); transition-delay: 500ms;  }
+.camera-feed-wrapper.in { transform: translateY(0); }
+.camera-feed-wrapper iframe { width: 100%; height: 100%; }
+
+.flip-clock-wrapper { display: inline-block; width: auto; margin: 4rem auto 0; }
+
+.question-number, .answer-number { font-size: 2.5rem }
+
+.place-your-bets { font-size: 2.5rem; }
+.place-your-bets.last-ten-seconds { animation: pulse-text 1s infinite; animation-direction: alternate; animation-timing-function: ease-out; }
+
+@keyframes pulse-text  {
+    0% { font-size: 2.5rem; }
+    100% { font-size: 4rem; }
+}
+
+.times-up { font-size: 3rem; }
+
+.time-to-vote, .audience-results { font-size: 2.5rem; }
+.time-to-vote { margin-bottom: 2rem; }
+.time-to-vote + img { width: 250px; height: 250px; }
+
+.sequence .first .description {font-weight: 400;font-size: 1.75rem;}
+.sequence .first h2 {font-weight: 500;font-size: 1.75rem;}
+.sequence ul li { margin: .5rem 0; }
+.sequence ul li h2 {font-size: 1.75rem;}
+.sequence .last iframe { overflow: hidden; width: 600px; height: 371px; border: none; }
+.sequence .last h2 { margin-top: 3rem; font-size: 30rem; font-weight: bold; opacity: 0; }
+.sequence .last h2.fade-in { opacity: 1; font-size: 12rem; transition: all 500ms ease-in; }
+.sequence .last h2.error { opacity: 1; font-size: 8rem; }
+
+.logo-container { position: absolute; bottom: 1rem; left: 0; right: 0; margin: auto; }
+.logo-container img { max-width: 115px; }
+
+.dashboard {position: absolute;bottom: 0;left: 0;display: flex;justify-content: center;right: 0;margin: 0 auto;flex: 0 1 auto;}
+
+#clock-buttons {padding: .5rem;flex: 0 1 auto;}
+#clock-buttons button { background: #fff; border: none; padding: .5rem 1rem; font-weight: bold; color: #444; cursor: pointer; }
+#clock-buttons button:hover i { color: #888; }
+#clock-buttons button:first-child { margin-right: .25rem; }
+#clock-buttons button:last-child { margin-left: .25rem; }
+
+#skip-buttons {padding: .5rem;flex: 0 1 auto;}
+#skip-buttons button { background: #fff; border: none; padding: .5rem 1rem; font-weight: bold; color: #444; text-decoration: none; cursor: pointer; }
+#skip-buttons button[disabled] { cursor: not-allowed; }
+
+.menu { transition: all 500ms ease-in-out;padding: .5rem;margin: 0;flex: 0 1 auto;transform: translateY(100%); transition-delay: 250ms;}
+.menu.in { transform: translateY(0); }
+.menu ul {list-style: none;margin: 0;padding: 0;display: flex;flex: 0 1 auto;}
+.menu ul li {flex: 0 1;align-items: stretch;justify-content: center; margin-right: .5rem;}
+.menu ul li:last-child { margin-right: 0; }
+.menu ul li button {text-decoration: none;text-align: center;background: #fff;padding: .5rem .75rem;margin-bottom: 0;color: #444;border: none;}
+.menu ul li button:hover, .menu ul li.active button { background: #ccc; }
