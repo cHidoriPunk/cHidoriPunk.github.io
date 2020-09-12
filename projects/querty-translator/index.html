@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="inputField" style="height: 24px;">
+        <select id="selectFromToLang" style="height: 30px;">
+            <option value="-1" selected>Select from to language</option>
+            <option value="1">Hebrew To English</option>
+            <option value="2">English To Hebrew</option>
+        </select>
+        <button type="submit" style="height: 28px;">send</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        const qwertyMap = {
+            "q": "/",
+            "w": "'",
+            "e": "ק",
+            "r": "ר",
+            "t": "א",
+            "y": "ט",
+            "u": "ו",
+            "i": "ן",
+            "o": "ם",
+            "p": "פ",
+            "a": "ש",
+            "s": "ד",
+            "d": "ג",
+            "f": "כ",
+            "g": "ע",
+            "h": "י",
+            "j": "ח",
+            "k": "ל",
+            "l": "ך",
+            ";": "ף",
+            "'": ",",
+            "z": "ז",
+            "x": "ס",
+            "c": "ב",
+            "v": "ה",
+            "b": "נ",
+            "n": "מ",
+            "m": "צ",
+            ",": "ת",
+            ".": "ץ",
+            "/": ".",
+            " ": " "
+        }
+
+        function translateQuerty() {
+
+            const langId = document.getElementById("selectFromToLang").value;
+            if (langId === "-1") return;
+
+            let newStr = "";
+            const str = document.getElementById("inputField").value;
+            const getKey = (obj, val) => Object.keys(obj)[Object.values(obj).indexOf(val)];
+            const getValue = (obj, key) => Object.values(obj)[Object.keys(obj).indexOf(key)];
+
+            if (langId === "2") {
+                for (let index = 0; index < str.length; index++) {
+                    newStr += getValue(qwertyMap, str[index]);
+                }
+            } else {
+                for (let index = 0; index < str.length; index++) {
+                    newStr += getKey(qwertyMap, str[index]);
+                }
+            }
+
+            document.getElementById("result").innerHTML = newStr;
+        }
+
+        document.querySelector("form").addEventListener("submit", function (ev) {
+            translateQuerty();
+            ev.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
