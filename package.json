@@ -17,16 +17,16 @@
     "foundation-sites": "^6.6.3",
     "gulp-cli": "^2.3.0",
     "gulp-eol": "^0.2.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "motion-ui": "~2.0.0",
     "what-input": "^5.2.10"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-load-plugins": "^2.0.5",
+    "gulp-load-plugins": "^2.0.6",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0"
   },
