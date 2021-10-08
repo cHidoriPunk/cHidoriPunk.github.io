@@ -1,0 +1,38 @@
+.social-link { display: flex; word-break: break-all; }
+
+
+.main-section {
+  > div {
+    &:first-child { background-color: $radiant-blue; }
+    &:last-child { background-color: $light-gray; }
+  }
+}
+
+header { padding: 1rem .5rem;
+  @include breakpoint(medium) { padding: 1rem;  }
+  h1 { font-weight: 300; }
+  .info { margin: 1rem 0; }
+  .tldr { margin-top: 1rem; }
+}
+
+.info {
+  .icon { width: 1.5rem; margin: .5rem .5rem 1rem 0; display: inline-flex; align-items: center; justify-content: center;
+    i { color: $primary-color; }
+  }
+}
+
+#print-btn { position: fixed; display: flex; padding: .5rem; background-color: $light-gray; border-radius: 1rem; transition: all .2s ease; left: 0.5rem; bottom: .5rem; border: 3px solid $radiant-blue;
+  @include breakpoint(medium) { left: 1rem; bottom: 1rem;
+    &:hover { bottom: 1.5rem; left: 1.5rem; cursor: pointer; }
+  }
+  i { color: $radiant-blue; 
+    @include breakpoint(small only) { font-size: 1.5rem; }
+  }
+}
+
+@media print {
+  .main-section {
+    > div:last-child { width: 100%; flex-basis: 100%; max-width: 100%; }
+  }
+  //.page-break { page-break-before: always; break-inside: avoid; }
+}
