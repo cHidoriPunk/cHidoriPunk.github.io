@@ -1,9 +1,0 @@
-html { -webkit-transition: all 1s; -moz-transition: all 1s; transition: all 1s; } 
-body { background:#ccc; overflow-y: scroll; }
-.wrapper { width: 1170px; display: block; margin: 0 auto; background: #fff; }
-.wrapper #main-image { margin: 0 auto; display: block; overflow: hidden; padding: 10px 10px 0 10px;} 
-.wrapper #main-image img { max-width: 100%; }
-.wrapper ul.list { padding: 0 10px 5px 0; list-style-type: none; display: inline-block; margin: 0;}
-.wrapper ul.list li { display: block; width: 19.13%; height: 200px; overflow: hidden; float: right; padding: 5px; max-height: 145px;}
-.wrapper ul.list li:first-child { padding-right: 0; }
-.wrapper ul.list li img { max-width: 100%; cursor: pointer; }
