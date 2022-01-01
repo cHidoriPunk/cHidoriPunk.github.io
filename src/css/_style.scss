@@ -1,0 +1,48 @@
+@import 'base';
+@import 'timeline';
+
+ p { line-height: 1.4; }
+ ul { padding: 0 1rem; margin: 0; }
+
+.page-wrapper {
+    > .row { max-width: 100%; margin: 0 auto; display: flex;
+        @media (min-width: 768px) { max-width: 75rem; }
+        > .col {
+            &:first-child { background-color: $radiant-blue; width: 10%;
+                @media print { display: none; }
+            }
+            &:last-child { background-color: $light-gray; width: 90%; flex-direction: column; padding: 1rem;
+                @media (min-width: 768px) { padding: 1.5rem; }
+                @media print { width: 100%; background-color: inherit; }
+            }
+        }
+    }
+}
+
+.main-header { padding: 1rem 0;
+    @media (min-width: 768px) { padding: 1rem; }
+    h1 { font-weight: 300; margin: 0; }
+    h2 { margin: 0;
+        @media (min-width: 768px) { margin-top: .5rem; }
+    }
+}
+
+.info {
+    @media (min-width: 768px) { padding: 1rem; }
+    &-row { display: flex; margin-bottom: 1rem; color: $primary-color; }
+    .icon { margin-right: .5rem; display: flex; justify-content: center; width: 1.5rem; color: $primary-color; }
+    a { color: $primary-color; text-decoration: none;
+        &:hover, &:focus { text-decoration: underline; }
+    }
+    .lead { margin-top: 2rem; }
+}
+
+.printBtn { position: fixed; display: flex; padding: .5rem; background-color: $light-gray; border-radius: 1rem; transition: all .2s ease; left: 0.5rem; bottom: .5rem; border: 3px solid $radiant-blue; color: $radiant-blue; font-size: 1.5rem;
+    @media (min-width: 768px) { left: 1rem; bottom: 1rem;
+        &:hover { bottom: 1.5rem; left: 1.5rem; cursor: pointer; }
+    }
+}
+
+@media print {
+    .hide-for-print { display: none; }
+}
