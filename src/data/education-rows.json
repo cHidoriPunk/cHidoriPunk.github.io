@@ -1,0 +1,23 @@
+[
+    {
+        "key": 1,
+        "courseTitle": "IT-Window, Java / Android development, Course Diploma",
+        "courseDescription": "<p>Learned the basic of JAVA (OOP, Threading), Basics of Android Development. Created an App for course completion.</p>"
+    },
+    {
+        "key": 2,
+        "courseTitle": "Appleseeds Academy, web developer, Course Diploma.",
+        "courseDescription": "<p>Learned HTML5, CSS3 & the basics of JavaScript, jQuery, PHP, MySQL.<\/p>"
+    },
+    {
+        "key": 3,
+        "courseTitle": "Tiltan College, web design, Participance Diploma.",
+        "courseDescription": "<p>Learned the fondamentals of web development & design, HTML, CSS, Photoshop, Illustrator, Flash & Indesign.<\/p>"
+    }
+    ,
+    {
+        "key": 4,
+        "courseTitle": "Shifman High School, Geography, Biology, English, Graduated.",
+        "courseDescription": "<p>Theoretical studies.<\/p>"
+    }
+]

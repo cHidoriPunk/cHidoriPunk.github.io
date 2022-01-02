@@ -1,0 +1,32 @@
+[
+    {
+        "key": 1,
+        "jobTitle": "Front End Web Developer, R &D design team.",
+        "jobDates": "<em>Plus500 <small>(2018 - present day)</small></em>",
+        "jobDescription": "<p>Working with a team of designer/developers that are responsible for Plus500's products such as: main website, affiliates website, web trader, Native applications (iOS, Android), email design implmentation (email client compatability) & inner applications that are used by other teams</p> <p>I've helped maintaing an email builder interface that a content team used to build emails & export the markup into localization. I was also in charge of <a href=\"https://www.plus500.co.uk\" target=\"_blank\" rel=\"noreferrer\">Plus500 website</a> added regulatory changes, product managers requests, covered front to back code (CSHTML, SCSS, .NET C#) in an MVC environment,  by doing so I've managed to save another team time & resources </p><p>Learned how to handle NPM packages & NodeJS, implemented Gulp script which took care of SASS compliation, JS minification & bundling, perfected website load time using Google's lighthouse auditing tool: font load delivery, images lazy load optimization of styles (with component driven design). worked with Bootstrap 3-5 & Zurb's Foundation CSS frameworks.</p><p>Built chrome extentions that helped me complete tedious tasks like:</p><ul><li>A full Email design from top to bottom with partials, helped be visualize all email aspects</li><li>A \"Search & Replace\" tool that helped me replace strings in 32 languages & save the output to CSV file which later I could import to localization</li></ul>"
+    },
+    {
+        "key": 2,
+        "jobTitle": "Full-Stack Web Developer",
+        "jobDates": "<em>Marvilix, development team. <small>(2016 - 2017)</small></em>",
+        "jobDescription": "<p>I've been in charge of WordPress websites (installations, maintenance, optimization, customization to both frontend & backend), Lead the development of an interactive accessibility tool for people with disabilities. Helped with building of web applications & worked with various API's, took part in creating ERP interfaces. Optimized websites with the recommendations of google PAGE INSIGHTS (such as: caching, minification, content delivery).</p><p>Learned AngularJS, gained more PHP & MYSQL experience. Started working with GIT & Amazon's AWS.</p>"
+    },
+    {
+        "key": 3,
+        "jobTitle": "Front End Developer",
+        "jobDates": "<em>Microline systems, web developers team. <small>(11/2014 - 11/2016)</small></em>",
+        "jobDescription": "<p>Created a unique accessibility tool for the company which covered 65% of WCGA AA requirements. I was in charge of website innovation, required research on my part in UX\/UI. Helped implementing methods for Google Analytics Events, later on with Google's Tag Manager. Implemented several jQuery galleries & plugins, also wrote some of my own.\r\n        Customized the \\\"Bsmart\\\" application backend system for the client needs.<\/p><p>Learned working with Bootstrap, perfected JavaScript & jQuery Skills. Mainly worked with XSLT,HTML5, ASP, CSS, JavaScript & jQuery.<\/p>"
+    },
+    {
+        "key": 4,
+        "jobTitle": "Webmaster",
+        "jobDates": "<em>Studio-Sparkle, Web design. <small>(2008 - 2014)</small></em>",
+        "jobDescription": "<p>Installation, maintenance &amp; customization of Drupal, Joomla & WordPress sites. Worked with Cpanel, Control Web Panel (opensource web panel), Plesk & DirectAdmin.</p><p>Creation of landing pages.</p>"
+    },
+    {
+        "key": 5,
+        "jobTitle": "Web designer",
+        "jobDates": "<em>Freelance. <small>(2010 - 2013)</small></em>",
+        "jobDescription": "<p>Worked as a freelance web developer, mainly created static HTML/CSS sites & landing pages.</p>"
+    }
+]

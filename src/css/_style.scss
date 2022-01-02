@@ -29,7 +29,7 @@
 
 .info {
     @media (min-width: 768px) { padding: 1rem; }
-    &-row { display: flex; margin-bottom: 1rem; color: $primary-color; }
+    &-row { display: flex; align-items: center; margin-bottom: 1rem; color: $primary-color; }
     .icon { margin-right: .5rem; display: flex; justify-content: center; width: 1.5rem; color: $primary-color; }
     a { color: $primary-color; text-decoration: none;
         &:hover, &:focus { text-decoration: underline; }

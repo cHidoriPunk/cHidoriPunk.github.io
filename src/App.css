@@ -1,31 +1,22 @@
 .timeline {
-  margin: 1rem auto;
   padding: 0 1rem;
   position: relative;
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .timeline {
-    margin: 30px;
-    padding: 0;
-    width: 90%;
-  }
+  width: 90%;
 }
 
 .timeline::before {
   background: #cacaca;
   content: "";
   height: 100%;
-  left: 2.063rem;
+  left: 1rem;
   position: absolute;
   top: 0;
   width: 3px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .timeline::before {
-    left: 0;
+    left: 2.063rem;
   }
 }
 
@@ -94,33 +85,29 @@
   margin-top: .1875rem;
 }
 
-.timeline .skills-title {
-  position: relative;
-}
-
-.timeline .skills-title h2 {
-  padding: .5rem 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .timeline .skills-title h2 {
-    padding: .5rem 2rem;
-    margin: 0 0 0 2rem;
-  }
-}
-
 .timeline .skills .timeline-content {
   padding: 0 .75rem;
 }
 
 @media (min-width: 768px) {
   .timeline .skills .timeline-content {
-    padding: .5rem 2rem;
+    padding: 0 2rem;
   }
 }
 
-.timeline .skills .timeline-dot {
-  margin-top: .125rem;
+.timeline-title {
+  position: relative;
+}
+
+.timeline-title h2 {
+  padding: .5rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-title h2 {
+    padding: .5rem 2rem;
+    margin: 0 0 0 2rem;
+  }
 }
 
 .timeline-item {
@@ -312,6 +299,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1rem;
   color: #1779ba;
 }

@@ -1,0 +1,30 @@
+[
+    {
+        "key": 1,
+        "name": "HTML5, CSS3"
+    },
+    {
+        "key": 2,
+        "name": "Vanilla JavaScript (ES2015, ES6), jQuery, jQueryUI"
+    },
+    {
+        "key": 3,
+        "name": "PHP, .NET, C#"
+    },
+    {
+        "key": 4,
+        "name": "NPM, NodeJS, React"
+    },
+    {
+        "key": 5,
+        "name": "GIT, SVN"
+    },
+    {
+        "key": 6,
+        "name": "MYSQL"
+    },
+    {
+        "key": 7,
+        "name": "Java, Android Development"
+    }
+]

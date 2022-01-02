@@ -1,0 +1,45 @@
+[
+    {
+        "key": 1,
+        "classes": "address",
+        "icon": "map-marker-alt",
+        "content": "Hertzel 49, Tirat Carmel"
+    },
+    {
+        "key": 2,
+        "classes": "phone",
+        "icon": "mobile-alt",
+        "content": "<a href=\"tel:+972544697419\" target=\"_blank\" rel=\"noopener noreferrer\">+972544697419</a>"
+    },
+    {
+        "key": 3,
+        "classes": "email",
+        "icon": "envelope",
+        "content": "<a href=\"mailto:dkalaora@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">dkalaora@gmail.com</a>"
+    },
+    {
+        "key": 4,
+        "icon": "birthday-cake",
+        "content": "02/01/1983"
+    },
+    {
+        "key": 5,
+        "icon": "twitter",
+        "content": "<a href=\"https://twitter.com/DanielKalaora\" target=\"_blank\" rel=\"noreferrer\">twitter.com/DanielKalaora</a>"
+    },
+    {
+        "key": 6,
+        "icon": "facebook",
+        "content": "<a href=\"https://facebook.com/daniel.kalaora\" target=\"_blank\" rel=\"noreferrer\">facebook.com/daniel.kalaora</a>"
+    },
+    {
+        "key": 7,
+        "icon": "linkedin-in",
+        "content": "<a href=\"https://linkedin.com/in/KalaoraDaniel\" target=\"_blank\" rel=\"noreferrer\">linkedin.com/in/KalaoraDaniel</a>"
+    },
+    {
+        "key": 8,
+        "icon": "github",
+        "content": "<a href=\"https://github.com/cHidoriPunk\" target=\"_blank\" rel=\"noreferrer\">github.com/cHidoriPunk</a>"
+    }
+]

@@ -6,13 +6,11 @@ $timeline-item-card: false;
 $timeline-item-card-radius: 50%;
 
 // Timeline
-.timeline { margin: 1rem auto; padding: 0 1rem; position: relative; width: 100%;
-  @media (max-width: 767px) { margin: 30px; padding: 0; width: 90%; }
-  &::before { background: $timeline-color; content: ""; height: 100%; left: 2.063rem; position: absolute; top: 0; width: 3px; 
-    @media (max-width: 767px) { left: 0; }
+.timeline { padding: 0 1rem; position: relative; width: 90%;
+  &::before { background: $timeline-color; content: ""; height: 100%; left: 1rem; position: absolute; top: 0; width: 3px; 
+    @media (min-width: 768px) { left: 2.063rem;  }
   }
   &::after { clear: both; content: ""; display: table; width: 100%; }
-
   h4, h5 { margin: .25rem 0 0 0;
     @media (min-width: 768px) { margin: .5rem 0 0 0;  }
   }
@@ -34,15 +32,16 @@ $timeline-item-card-radius: 50%;
   .education &-dot { margin-top: .1875rem; }
 
   .skills {
-      &-title { position: relative;
-        h2 { padding: .5rem 2.5rem;
-          @media (min-width: 768px) { padding: .5rem 2rem; margin: 0 0 0 2rem; }
-        }
-      }
       .timeline-content { padding: 0 .75rem;
-          @media (min-width: 768px) { padding: .5rem 2rem; }
+          @media (min-width: 768px) { padding: 0 2rem; }
       }
-      .timeline-dot { margin-top: .125rem; }
+  }
+
+  &-title {
+    position: relative;
+    h2 { padding: .5rem 2.5rem;
+      @media (min-width: 768px) { padding: .5rem 2rem; margin: 0 0 0 2rem; }
+    }
   }
 
   &-item { padding-left: 2rem; position: relative;
