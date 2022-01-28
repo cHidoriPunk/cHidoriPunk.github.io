@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const SkillsRowComponent = ({skillsRow}) => (
-  <article className="timeline-item" key={skillsRow.key}>
+  <article className="timeline-item">
     <div className="timeline-content">
       <p>{skillsRow.name}</p>
     </div>
@@ -10,7 +10,7 @@ const SkillsRowComponent = ({skillsRow}) => (
 
 SkillsRowComponent.propTypes = {
   skillsRow: PropTypes.shape({
-    key: PropTypes.string,
+    key: PropTypes.number,
     name: PropTypes.string
   })
 }

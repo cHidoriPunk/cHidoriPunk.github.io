@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ExperienceRowComponent = ({experienceRow}) => (
-  <article className="timeline-item" key={experienceRow.key}>
+  <article className="timeline-item">
     <div className="timeline-content">
       <span className="timeline-dot"></span>
       <h2 dangerouslySetInnerHTML={{ __html: experienceRow.jobTitle }} />
@@ -13,7 +13,7 @@ const ExperienceRowComponent = ({experienceRow}) => (
 
 ExperienceRowComponent.propTypes = {
   experienceRow: PropTypes.shape({
-    key: PropTypes.string,
+    key: PropTypes.number,
     jobTitle: PropTypes.string,
     jobDates: PropTypes.string,
     jobDescription: PropTypes.string

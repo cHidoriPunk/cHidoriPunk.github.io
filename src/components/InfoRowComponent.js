@@ -10,7 +10,7 @@ const fontIcon = (infoRow) => {
 }
 
 const InfoRowComponent = ({infoRow}) => (
-    <div className={`info-row ${infoRow.classes}`} key={infoRow.key}>
+    <div className={`info-row ${infoRow.classes}`}>
       <span className="icon">
         <FontAwesomeIcon icon={fontIcon(infoRow)} className="fa-lg" />
       </span>
@@ -20,7 +20,7 @@ const InfoRowComponent = ({infoRow}) => (
 
 InfoRowComponent.propTypes = {
   infoRow: PropTypes.shape({
-    key: PropTypes.string,
+    key: PropTypes.number,
     classes: PropTypes.string,
     icon: PropTypes.string,
     content: PropTypes.string

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const EducationRowComponent = ({educationRow}) => (
-  <article className="timeline-item" key={educationRow.key}>
+  <article className="timeline-item">
     <div className="timeline-content">
       <span className="timeline-dot"></span>
       <h3 dangerouslySetInnerHTML={{ __html: educationRow.courseTitle }} />
@@ -12,7 +12,7 @@ const EducationRowComponent = ({educationRow}) => (
 
 EducationRowComponent.propTypes = {
   educationRow: PropTypes.shape({
-    key: PropTypes.string,
+    key: PropTypes.number,
     courseTitle: PropTypes.string,
     courseDescription: PropTypes.string
   })
